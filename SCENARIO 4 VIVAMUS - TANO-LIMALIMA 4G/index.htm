@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+  <html lang="en"> 
+    <head>
+      <!-- meta tag -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <title> VIVAMUS </title>
+
+      <!-- css link -->
+      <link rel="stylesheet" type="text/css" href="assets/css/css.css">
+    </head>
+
+        <body>
+
+          <header>
+          <!-- vivamus logo -->
+            <div id="logo">
+              <a href="#"><img src="assets/images/VIVA_LOGO.png" alt="logo"></a>
+            </div>
+            
+          <!-- Navigation Menu -->
+              <nav id="top-nav"> 
+                <span class="with-bar"><a href="#" >Bibendum</a></span>
+                <span class="with-bar"><a href="#" >Sollicitudin</a></span>
+                <span class="with-bar"><a href="#" >Metus</a></span>
+                <span><a href="#" >Egestas</a></span> 
+              </nav>
+          <!-- Search Box -->
+                <div id="search-box">
+                   <input type="text">
+                    <button type="submit" id="search-icon"><img src="assets/images/MAGNIFYING.png" alt="magnifying"></button>
+                </div>
+          </header>
+
+
+          <!-- Main Form-->
+          <main id="mainForm">
+          <!-- Title Bar --> 
+            <div class="titleBar">
+              <h1 class="title">In euismod sapien eu maximus tempus</h1> 
+              <h2 class="title-description">Vestibulum bibendum posuere dui, in pharetra est hendreit ac.<br>Integer posuere metus lacus</h2> 
+              <h1 class="title">Vivamus interdum nunc ac sem fringilla </h1>
+              <h2 class="title-description">duis risus urna, mattis eget justo non, gravida ultrices diam</h2>
+              <h1 class="title">In euismod sapien eu maximus tempus.</h1>
+              <h2 class="title-description">Vestibulum bibendum posuere dui, in pharetra est hendrerit ac.<br> Integer posuere metus lacus</h2>
+            </div>
+          <!-- Progress Bar 123 -->
+              <div id="progressBar"></div>
+                <div id="steps-container">
+                <div id="step2"><span class="step"> 2 </span></div>
+                 <span id="step1"> 1 </span>
+                 <span id="step3" class="step"> 3 </span>
+              </div>
+              
+          <!-- Form --> 
+                <form id="regForm" action="assets/php/connect.php" method="post">
+
+          <!-- Form First Page (One Tab on Each Step of the Form)-->
+                  <div class="tab">
+                    <div class="panel1">
+                      <div class="panelHeading">
+                        <h3 class="panelTitle">About you</h3>
+                      </div>
+                        <div class="panel-forms1">
+                        <div class="first-name">
+                            <label for="fname">First name*</label><br>
+                            <input type="text" id="fname" name="firstName" required>
+                            <div id="fname-error" class="error"></div>
+                          </div>
+                          <div class="last-name">
+                            <label for="lname">Last name*</label><br>
+                            <input type="text" id="lname"  name="lastName" required>
+                            <div id="lname-error" class="error"></div>
+                          </div><br>
+                            <label for="email">Email Address*</label><br>
+                            <input type="email" id="email"  name="email" required><br>
+                            <div id="email-error" class="error"></div>
+
+                            <label for="phone">Mobile Number*</label><br>
+                            <input type="tel" id="phone" name="number" required>
+                            <div id="number-error" class="error"></div>
+                          </div>
+                    </div>
+                  </div>
+
+          <!-- Form Second Page (One Tab on Each Step of the Form)--> 
+                    <div class="tab"> 
+                      <div class="panel2">
+                        <div class="panelHeading">
+                          <h4 class="panelTitle">Your donation</h4>
+                        </div>
+                          <div class="panel-forms2">
+
+          <!-- Step 2 Paypal & Credit Card Button --> 
+                            <div id="payment">
+                              <span id="paypal-btn">Paypal</span>
+                                <span id="credit-btn">Credit Card</span>
+                              </div>
+          <!-- Step 2 Paypal Form --> 
+                              <div id="paypal-form">
+                                <h5><br>Vivamus Service Advisory</h5>
+                                <p id="advisory">March 25, 2022<br><br>
+                                  Paypal service in the Vivamus Website is<br> temporarily unavailable. Rest assured that<br> we're working hard to restore this service as<br> soon as possible.<br><br>Thank you.
+                                </p>
+                              </div>
+          <!-- Step 2 Credit Card Form --> 
+                              <div id="credit-form">
+                                <label class="donationLabel" for="donation">Donation Amount*</label><br>
+                                <input type="number" id="donation" name="donated" required>
+                                <div id="donation-error" class="error"></div><br>
+
+                                <label class="donationLabel" for="cardHolder">Card Holder Name*</label><br>
+                                <input type="text" id="cardHolder" name="cardHolder" required>
+                                <div id="holder-error" class="error"></div><br>
+
+                                <label class="donationLabel" for="cardNum">Credit Card No.*</label><br>
+                                <input type="number" id="cardNum" name="cardNumber" required>
+                                <div id="card-error" class="error"></div><br>
+
+                                <label class="donationLabel" for="code">Card Security Code*</label><br>
+                                <input type="password" id="code" name="code" required>
+                                <div id="code-error" class="error"></div><br>
+
+                                <label class="donationLabel" for="exDate">Expiry Date*</label><br>
+                                <input type="text" id="exDate" name="date" placeholder="MM / YY" required>
+                                <div id="date-error" class="error"></div><br>
+                                
+          <!-- Step 2 Visa & Mastercard Logo --> 
+                                <div id="visa-logo"><img src="assets/images/Visa_Logo.png" alt="visa"></div>                     
+                                <div id="mastercard-logo"><img src="assets/images/Mastercard_Logo.png" alt="mastercard"></div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+          <!-- Form Third Page (One Tab on Each Step of the Form)-->                
+                      <div class="tab">
+                        <div class="panel3">
+                          <div class="panelHeading">
+                            <h6 class="panelTitle">Comment Field</h6>
+                          </div>
+          <!-- Step3 Message Textfield -->              
+                          <label class="message-label" for="message">Your Message</label><br>
+                          <textarea id="message" name="message" required></textarea><br>
+          <!-- Step3 Checkbox Anonymous--> 
+                          <input type="checkbox" id="anonymous" name="hidden" value="yes">
+                          <label class="anonymous-label" for="anonymous">Keep me anonymous</label><br>
+                        </div>
+                      </div>
+          <!-- Buttons Next, Back & Submit--> 
+                      <div >
+                        <div >
+                          <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                        </div>
+                      </div>
+                </form>
+          </main>
+    
+      
+          <!-- Footer -->
+          <footer id="footer">
+
+          <!-- Footer Circles -->
+            <div id="circle-row">
+                <span><button class="circle"></button></span>
+                <span><button class="circle"></button></span>
+                <span><button class="circle"></button></span>
+                <span><button class="circle"></button></span>
+                <span><button class="circle"></button></span>
+            </div>
+          <!-- Footer Navigation Bar -->
+            <div id="foot-nav">
+                <span><a href="#">Pellentesque</a></span>
+                <span><a href="#">Et interdum</a></span>
+                <span><a href="#">Neque</a></span>
+                <span><a href="#">Integer</a></span>
+                <span><a href="#">Ullamcorper</a></span>
+                <span><a href="#">Sagitis</a></span>
+            </div>
+          <!-- Footer Copyright -->
+              <p>Copyright Ⓒ 2015 Proin eget ipsum libero<br>All Rights Reserved.</p>
+          
+          </footer>
+
+          <!-- Javascript Link -->
+             <script src="assets/js/myscript.js"></script>
+        
+      </body>
+</html>
+
